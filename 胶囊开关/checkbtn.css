@@ -1,0 +1,106 @@
+/*-------------------------*\
+  #胶囊开关
+\*-------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.checkbtn {
+	width:  400px;
+	height: 100px;
+	padding-top: 40px;
+	margin: 100px auto;
+	background: #3e3e3e;
+	border-radius: 100px;
+	box-shadow: 4px 4px 6px #666;
+}
+
+.box {
+	width:  200px;
+	height: 60px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	background: -webkit-linear-gradient(top, #11181f 0%, #161f29 100%);
+	background:         linear-gradient(top, #11181f 0%, #161f29 100%);
+	border-radius: 40px;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+}
+
+#btn {
+	display: none;
+}
+
+span {
+	display: block;
+	position: absolute;
+	transition: all .4s .1s cubic-bezier(0.200, 0.960, 0.620, 0.955);
+}
+
+span:nth-of-type(1){
+	width:  140px;
+	height: 52px;
+	border-radius: 26px;
+	background: -webkit-linear-gradient(top, #2c3e50 0%, #1e2a36 100%);
+	top:   4px;
+	right: 4px;
+	z-index: 10;
+	box-shadow: 0 6px 4px rgba(255, 255, 255, 0.1) inset, 0 2px 0px rgba(255, 255, 255, 0.2) inset,
+			    0 -6px 0px rgba(0, 0, 0, 0.2) inset, 0 -2px 0px rgba(0, 0, 0, 0.2) inset, 
+			    0 2px 2px rgba(0, 0, 0, 0.4), -4px 2px 8px rgba(0, 0, 0, 0.4), 
+			    2px 0 1px rgba(242, 201, 197, 0.5) inset;
+}
+
+span:nth-of-type(-n+2) {
+	width:  96px;
+	height: 52px;
+	top: 4px;
+	font-family: "Open Sans";
+}
+
+span:nth-of-type(-n+2):after{
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+	position: absolute;
+	top: 16px;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2),0 0 20px #ffffff;
+}
+
+span:nth-of-type(2){
+	left: 4px;
+	border-radius: 26px 0 0 26px;
+	background: -webkit-linear-gradient(top, #c0392b 0%, #d65548 100%);
+	box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.5) inset,0 -2 8px rgba(0, 0,0 0.4) inset;
+}
+
+span:nth-of-type(2):after{
+	content: "OFF";
+	left: 20px;
+}
+
+span:nth-of-type(3){
+	right: 4px; 
+	border-radius: 0 26px 26px 0;
+	background: -webkit-linear-gradient(top, #2ecc71 0%, #7ee2a8 100%);
+	box-shadow: -4px 4px 12px 4px rgba(0, 0, 0, 0.5) inset, 0 -2px 8px rgba(0 ,0 ,0, 0.4) inset;
+	opacity: 0.2;
+}
+
+span:nth-of-type(3):after {
+	content: "ON";
+	right: 25px;
+}
+input:checked~span:first-of-type {
+	right: 56px;
+}
+input:checked~span:nth-of-type(2) {
+	opacity: 0.2;
+}
+input:checked~span:nth-of-type(3) {
+	opacity: 1;
+}
+

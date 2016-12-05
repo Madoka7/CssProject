@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>奥运五环</title>
+</head>
+<body>
+	<canvas id="gradient" width='500' height='500' tabindex = '1'>你的浏览器不支持HTML5</canvas>
+	<script type="text/javascript">
+		var canvas = document.getElementById("gradient");
+		var ctx = canvas.getContext("2d");
+		var radius = 40; //半径
+
+		drawCircle(70,70,"#163b62",0,Math.PI * 2);
+		drawCircle(160,70,"#000000",0,Math.PI * 2);
+		drawCircle(250,70,"#bf0628",0,Math.PI * 2);
+		drawCircle(115,110,"#ebc41f",0,Math.PI * 2);
+		drawCircle(205,110,"#198e4a",0,Math.PI * 2);
+		drawCircle(70,70,"#163b62",-Math.PI / 8,Math.PI / 8);
+		drawCircle(160,70,"#000000",-Math.PI / 8,Math.PI / 8);
+		drawCircle(160,70,"#000000",Math.PI * 7 / 8,Math.PI * 9 / 8);
+		drawCircle(250,70,"#bf0628",Math.PI * 7 / 8,Math.PI * 9 / 8);
+
+		function drawCircle( x, y, color, startAngle, endAngle ){
+			ctx.beginPath();
+			ctx.lineWidth = 5;
+			ctx.strokeStyle = color;
+			ctx.arc( x, y, 40, startAngle, endAngle);
+			ctx.stroke();
+		}
+	</script>
+</body>
+</html>

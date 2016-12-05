@@ -1,0 +1,1 @@
+KISSY.add("ali-mod/www-common-fotter/0.0.3/index",["node"],function(n,t){function o(){this.init.apply(this,arguments)}var i=t("node");return o.prototype={init:function(n,t){var o=this;o._node=i.one(n),t?o.loadData(t):o.bindEvent()},loadData:function(n){},bindEvent:function(){}},o});

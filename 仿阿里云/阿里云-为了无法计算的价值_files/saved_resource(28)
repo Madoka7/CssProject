@@ -1,0 +1,97 @@
+.aliyun-index-community .module-wrap .aliyun-index-community {
+  background-color: #F5F5F5;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community a {
+  text-decoration: none;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-head {
+  margin-bottom: 68px;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-head h1 {
+  font-size: 24px;
+  text-align: center;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-content {
+  width: 100%;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-content.clearfix {
+  zoom: 1;
+  display: block;
+  _height: 1px;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-content.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-content .ali-content-item {
+  float: left;
+  width: 400px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-content .ali-content-item .item-box {
+  -webkit-transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #c5d8db;
+  height: 230px;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-content .ali-content-item .item-box .img-area {
+  width: 100%;
+  overflow: hidden;
+  height: 170px;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-content .ali-content-item .item-box .img-area img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-content .ali-content-item .item-box .box-header {
+  padding: 18px 25px;
+  font-size: 14px;
+  color: #373d41;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-content .ali-content-item .item-box:hover {
+  -webkit-box-shadow: 0 0 15px rgba(186, 204, 207, 0.7);
+  -moz-box-shadow: 0 0 15px rgba(186, 204, 207, 0.7);
+  box-shadow: 0 0 15px rgba(186, 204, 207, 0.7);
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-content .ali-content-item .item-box:hover .img-area img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-content .ali-content-item .item-appendix {
+  font-size: 14px;
+  padding-left: 0;
+  line-height: 2;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-content .ali-content-item .item-appendix a {
+  -webkit-transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #373d41;
+  text-decoration: none;
+}
+.aliyun-index-community .module-wrap .aliyun-index-community .ali-main-content .ali-content-item .item-appendix a:hover {
+  color: #01c1de;
+}

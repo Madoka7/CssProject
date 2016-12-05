@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>马尾效果</title>
+</head>
+<body>
+	<canvas id="gradient" width='500' height='500' tabindex = '1'>你的浏览器不支持HTML5</canvas>
+	<script type="text/javascript">
+		var canvas = document.getElementById("gradient");
+		var ctx = canvas.getContext("2d");
+		ctx.translate(250,100);
+		ctx.fillStyle = "rgba( 0, 0, 255, 0.3 )";
+		for(var i = 0;i < 60;i++){
+			ctx.scale(0.93,0.93);
+			ctx.rotate(Math.PI / 9);
+			ctx.translate(35,12);
+			ctx.fillRect(0,0,100,50);
+		}
+	</script>
+</body>
+</html>

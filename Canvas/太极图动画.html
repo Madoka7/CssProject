@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>太极图</title>
+</head>
+<body>
+	<canvas id="gradient" width='500' height='500' tabindex = '1' style="background-color:#eee">你的浏览器不支持HTML5</canvas>
+	<script type="text/javascript">
+		var canvas = document.getElementById("gradient");
+		var ctx = canvas.getContext("2d");
+		var angle = 0;
+
+
+		function drawSemiCircle( x, y, radius, startAngle, endAngle, color){
+			ctx.beginPath();
+			ctx.fillStyle = color;
+			ctx.arc( x, y, radius, startAngle, endAngle );
+			ctx.strokeStyle = "rgba(0,0,0,0)";
+			ctx.stroke();
+			ctx.fill();
+		}
+
+		function draw(){
+			ctx.clearRect(0,0,canvas.width,canvas.height);
+
+			var x1 = 250 + 50 * Math.sin(angle),
+			    y1 = 250 + 50 * Math.cos(angle);
+
+			var x2 = 250 - 50 * Math.sin(angle),
+				y2 = 250 - 50 * Math.cos(angle);
+
+			drawSemiCircle(250,250,100,Math.PI / 2 - angle,Math.PI * 3 / 2 - angle,'#000000');
+			drawSemiCircle(250,250,100,- Math.PI / 2 - angle,Math.PI / 2 - angle,'#ffffff');
+			// drawSemiCircle(x1,y1,50,- Math.PI / 2 - angle,Math.PI / 2 - angle,'#000000');
+			drawSemiCircle(x1,y1,50,0,Math.PI * 2,'#000000');
+			drawSemiCircle(x1,y1,10,0,Math.PI * 2,'#ffffff');
+			// drawSemiCircle(x2,y2,50,Math.PI / 2 - angle,Math.PI * 3 / 2 - angle,'#ffffff');
+			drawSemiCircle(x2,y2,50,0,Math.PI * 2,'#ffffff');
+			drawSemiCircle(x2,y2,10,0,Math.PI * 2,'#000000');
+			angle = angle >= Math.Pi *2 ? 0 : angle + Math.PI / 10;
+		}
+
+		setInterval(draw,150);
+	</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>粒子拼字效果</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family:"Microsoft YaHei";
+        }
+
+        .input-area {
+            position: absolute;
+            bottom: 150px;
+            left: calc(50% - 140px);
+        }
+
+        input#text {
+            background: #00aaff;
+            border: 1px solid #ffffff;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            padding: 5px 10px 5px 10px;
+            color: #ffffff;
+            width: 200px;
+            font-size: 14px;
+            outline: none;
+        }
+        
+        a#btn {
+            padding: 5px 10px 5px 10px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px 8px;
+        }
+
+        a#btn:hover {
+            background: #00bbff;
+        }
+
+        canvas {
+            background: #00aaff;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="1440px" height="790px">您的浏览器不支持canvas</canvas>
+    <div class="input-area">
+        <input type="text" id="text">
+        <a href="#" id="btn">确认</a>
+    </div>
+    <script type="text/javascript">
+        // 获取canvas和api
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+
+        //声明变量
+        var btn = document.getElementById("btn");
+        var text = document.getElementById("text");
+        var content;
+        var sprites = []; //存储粒子
+        var arr = [];
+        var center = {
+            x : canvas.width / 2,
+            y : canvas.height / 2,
+        }
+
+
+        //绑定按钮事件
+        btn.onclick = function () {
+            content = text.value;
+            refresh();
+        } 
+
+        //粒子类
+        function Sprite(obj) {
+            this.x = obj.x; //x坐标
+            this.y = obj.y; //y坐标
+            this.z = obj.z; //z坐标
+            this.radius = obj.radius; //半径
+            this.color = obj.color; //颜色
+        }
+
+        //绘制粒子
+        Sprite.prototype.draw = function(ctx) {
+            ctx.beginPath();
+            ctx.fillStyle = "rgba(" + this.color + "," +  Math.min(1,this.radius / 2) + ")";
+            ctx.arc(this.x,this.y,this.radius,0,Math.PI * 2);
+            ctx.fill();
+        }
+
+        //三维转二维
+        function threeToTwo() {
+            var focalLength = 250;
+            var scale = focalLength / (focalLength - this.z);
+
+            this.radius = this.radius * scale;
+
+        }
+
+        //获取文字
+        function getText() {
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            ctx.font = "bold 200px 微软雅黑";
+            ctx.fillStyle ="rgba(255,255,255,1)";//纯色 方便扫描
+            ctx.textAlign = "center";
+            ctx.fillText(content , canvas.width/2 , canvas.height/2);
+
+            //存储像素位置
+            var imgData = ctx.getImageData(0,0,canvas.width,canvas.height);
+            //清空画板
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            //遍历数组
+            sprites = [];
+            for(var x = 0; x < imgData.width; x += 6 ){
+                for(var y = 0; y < imgData.height; y += 6){
+                    var i = 4 * (y * imgData.width + x); //当前像素点
+                    if(imgData.data[i + 3] > 128) { //判断当前像素点的透明度是否大于0.5
+                        //在当前位置绘制粒子
+                        var sprite = new Sprite({
+                            x : x,
+                            y : y,
+                            z : 0,
+                        });
+                        //放入数组
+                        sprites.push(sprite);
+                    }
+                }
+            }
+        }
+
+        function getArr() {
+            getText(); //获取文本
+            arr = [];
+            //生成随机粒子
+            for(var i = 0; i < sprites.length; i++) {
+                var sprite = new Sprite({
+                    x : Math.random() * canvas.width,
+                    y : Math.random() * canvas.height,
+                    z : Math.random() * 200 - 100,
+                    radius : 2,
+                    color : "255,255,255"
+                });
+                //放入临时数组
+                arr.push(sprite);
+                //绘制粒子
+                sprite.draw(ctx);
+            }
+        }
+
+        function render(interval) {
+            var l = 2000 / interval;
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            for(var i = 0; i < sprites.length; i++) {
+                var xl = (sprites[i].x - arr[i].x) / l,
+                    yl = (sprites[i].y - arr[i].y) / l,
+                    zl = (sprites[i].z - arr[i].z) / l;
+                arr[i].x += xl;
+                arr[i].y += yl;
+                arr[i].z += zl;
+
+
+                arr[i].draw(ctx);
+            }
+        }
+
+        function refresh () {
+            getArr();
+            setInterval(function() {
+                render(100);
+            },100);
+        }
+
+
+
+
+    </script>
+</body>
+</html>

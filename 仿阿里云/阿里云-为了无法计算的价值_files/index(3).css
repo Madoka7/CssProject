@@ -1,0 +1,94 @@
+.www-aliyun-lego-common-tel .module-wrap .tel-box {
+  position: relative;
+  display: none;
+  z-index: 0;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .white {
+  display: inline-block;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .blue {
+  display: none;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box:hover .white {
+  display: none;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box:hover .blue {
+  display: inline-block;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box:hover .showTel {
+  display: inline-block !important;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .showTel {
+  position: absolute;
+  top: 0;
+  padding-right: 100px;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .showTel .tel-hover-panel {
+  width: 360px;
+  height: 205px;
+  background: #fff;
+  border: 1px solid #c5d8db;
+  padding: 0 20px;
+  border-top: 5px solid #00C1DE;
+  -webkit-box-shadow: 0 0 7.5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 7.5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 7.5px rgba(0, 0, 0, 0.15);
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .showTel .tel-hover-panel .top-area {
+  position: relative;
+  width: 100%;
+  padding: 25px 0;
+  border-bottom: .5px solid #DEDEDE;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .showTel .tel-hover-panel .top-area .top-left-icon {
+  margin-left: 53px;
+  width: 50px;
+  float: left;
+  padding-top: 10px;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .showTel .tel-hover-panel .top-area .top-right-text {
+  padding-left: 127px;
+  height: 54px;
+  color: #373D41;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .showTel .tel-hover-panel .top-area .top-right-text .desc {
+  font-size: 14px!important;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .showTel .tel-hover-panel .top-area .top-right-text .phone {
+  font-size: 18px!important;
+  line-height: 28px;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .showTel .tel-hover-panel .top-area .panel-close {
+  color: #D0D0D0;
+  position: absolute;
+  right: 0;
+  top: 17px;
+  font-size: 14px!!important;
+  cursor: pointer;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .showTel .tel-hover-panel .bottom-area {
+  width: 100%;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .showTel .tel-hover-panel .bottom-area .bottom-li {
+  padding: 20px;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .showTel .tel-hover-panel .bottom-area .bottom-li li {
+  float: left;
+  width: 50%;
+  list-style: circle;
+  color: #A9B0B4;
+  font-size: 14px!important;
+  line-height: 24px;
+  height: 24px;
+  list-style-position: inside;
+  margin-bottom: 5px;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .showTel .tel-hover-panel .bottom-area .bottom-li li a {
+  text-decoration: none;
+  color: inherit;
+}
+.www-aliyun-lego-common-tel .module-wrap .tel-box .showTel .tel-hover-panel .bottom-area .bottom-li li a:hover {
+  color: #00c1de;
+}

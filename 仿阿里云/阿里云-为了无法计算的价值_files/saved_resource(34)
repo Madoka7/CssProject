@@ -1,0 +1,7 @@
+.aliyun-common-footer .right-text a {
+  text-decoration: none;
+  color: inherit;
+}
+.aliyun-common-footer .right-text a:hover {
+  color: #00c1de;
+}

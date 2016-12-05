@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>多层圆环动画</title>
+</head>
+<body>
+	<canvas id='canvas' width="1366" height="576"> CANVAS CANNOT SUPPORTED! </canvas>
+	<script type="text/javascript">
+		 var canvas = document.getElementById("canvas");
+		 var ctx = canvas.getContext("2d");
+
+		 var numOfRing = 5,  //圆环数
+		 	 minNum = 7, //最里层的小球数量
+		 	 radius = 10; //小球半径
+		 	 rotateAngle = 0; //旋转角度
+
+
+		 function drawCircle() {  //绘制小球
+		 	for(var j = 0;j < numOfRing; j++){
+		 		var num = minNum * (j + 1); //当前层数小球数量
+		 		//求路径的边长
+		 		var r = Math.round(Math.random() * 255),
+		 			g = Math.round(Math.random() * 255),
+		 			b = Math.round(Math.random() * 255);
+		 		var rgb = 'rgb(' + r + ',' + g + ',' + b +')';
+			 	var pathRadius = (radius * 2 + 3) / 2 / Math.sin(Math.PI / num);
+			 	var angle = Math.PI * 2 / num;
+			 	for(var i = 0; i < num; i++){
+			 		var x = pathRadius * Math.cos(angle * i + rotateAngle) + canvas.width / 2;
+			 		var y = pathRadius * Math.sin(angle * i + rotateAngle) + canvas.height / 2;
+			 		ctx.beginPath();
+			 		ctx.arc(x,y,radius,0,Math.PI * 2);
+			 		ctx.fillStyle = rgb;
+			 		ctx.fill();
+			 	}
+		 	}
+		 }
+
+		 function draw(){
+		 	ctx.clearRect(0,0,canvas.width,canvas.height); //清空区域
+		 	drawCircle();
+		 	rotateAngle = rotateAngle >= Math.PI * 2 ? 0 : rotateAngle + Math.PI / 20;
+		 }
+
+		 setInterval(draw,150);
+	</script>
+</body>
+</html>

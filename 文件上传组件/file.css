@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-family:'Hiragino Sans GB','Microsoft Yahei',"WenQuanYi Micro Hei",SimSun,Tahoma,Arial,Helvetica,STHeiti;
+}
+#fileUploadBox{
+	margin:100px auto 0 auto;
+	width: 300px;
+	text-align: center;
+}
+#fileSelectPanel{
+	width: 100%;
+	height: 150px;
+	border: 2px dashed #ccc;
+	line-height: 150px;
+}
+#fileUploadTable{
+	width: 800px;
+	margin: 50px auto;
+}
+.fileInput{
+	background: #eee;
+}
+

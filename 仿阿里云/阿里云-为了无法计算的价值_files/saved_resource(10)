@@ -1,0 +1,328 @@
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  /**********************
+      banner图片为白色系时样式覆盖开始
+      ***********************/
+  /**********************
+      banner图片为白色系时样式覆盖结束
+      ***********************/
+  /**********************
+      鼠标移动到topbar&menu混合区时，底色全部变为蓝色
+      ***********************/
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .title-cell {
+  position: absolute;
+  color: #fff;
+  top: 140px;
+  left: 0;
+  right: 0;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .title-cell h1 {
+  color: #fff;
+  font-size: 40px;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .title-cell p {
+  margin-top: 15px;
+  font-size: 14px;
+  width: 740px;
+  line-height: 25px;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .title-cell .btns {
+  margin-top: 25px;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .title-cell .btns a {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 40px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .title-cell .btns a:hover {
+  text-decoration: none;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .title-cell .btns .btn-b {
+  border: 1px solid #00a2ca;
+  background-color: #00a2ca;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .title-cell .btns .btn-b:hover {
+  background-color: #33b5d4;
+  border: 1px solid #33b5d4;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .title-cell .btns .btn-w {
+  border: 1px solid #fff;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .title-cell .btns .btn-w:hover {
+  background-color: #fff;
+  color: #333;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .title-cell .btns .btn-link {
+  padding: 0;
+  color: #00a2ca;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .J_video {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 50%;
+  margin-top: -32px;
+  left: 890px;
+  cursor: pointer;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .J_video img {
+  display: block;
+  width: 100%;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .J_video img.normal {
+  display: block;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .J_video img.onmouseover {
+  display: none;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .J_video:hover .normal {
+  display: none;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .J_video:hover .onmouseover {
+  display: block;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .ay-global-topbar .lnk-search:link,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .ay-global-topbar .lnk-search:visited {
+  background: transparent !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .ay-global-topbar .li-spacing {
+  background: transparent;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .ali-common-header {
+  background: transparent !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap .ali-common-header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black {
+  /**兼容**/
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .ay-global-topbar,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .ali-main-notice {
+  /***先把原来样式给重置掉**/
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+  background: transparent !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#19FFFFFF', EndColorStr='#19FFFFFF')";
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .ay-global-topbar a:link,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .ali-main-notice a:link,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .ay-global-topbar a:visited,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .ali-main-notice a:visited {
+  color: #fff !important;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(85));
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .newuser-ticket:link,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .newuser-ticket:visited {
+  opacity: 1 !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .ali-common-header-inner .menu li.top-menu-item .menu-hd {
+  color: #fff;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .ali-common-header-inner .menu div.top-menu-item .menu-hd {
+  color: #fff;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .ali-main-notice span,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .ali-main-notice .icon-bullhorn {
+  color: #fff !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black #J-common-header-logo-white {
+  display: block !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black #J-common-header-logo-black {
+  display: none !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black #J-common-header-black-activity-img {
+  display: none !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black #J-common-header-white-activity-img {
+  display: block !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .ali-common-header-register {
+  background: rgba(255, 255, 255, 0.1) !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#19FFFFFF', EndColorStr='#19FFFFFF')";
+  color: #fff !important;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(85));
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-black .ali-common-header-register h1 {
+  color: #fff !important;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(85));
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white {
+  /***白系banner，鼠标hover时，logo要反白(home-topbar-menu-hover这个是延时用的)***/
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ay-global-topbar,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ali-main-notice {
+  /***先把原来样式给重置掉**/
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+  background: transparent !important;
+  background: rgba(0, 0, 0, 0.1) !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#19000000', EndColorStr='#19000000')" !important;
+  zoom: 1 !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ay-global-topbar a:link,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ali-main-notice a:link,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ay-global-topbar a:visited,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ali-main-notice a:visited {
+  color: #333 !important;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(85));
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ay-global-topbar .lnk-user i,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ali-main-notice .lnk-user i {
+  border-top-color: #333 !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .newuser-ticket:link,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .newuser-ticket:visited {
+  opacity: 1 !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ali-common-header-inner .menu li.top-menu-item .menu-hd {
+  color: #000;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ali-common-header-inner .menu div.top-menu-item .menu-hd {
+  color: #000;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ali-main-notice span,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ali-main-notice .icon-bullhorn {
+  color: #000 !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white #J-common-header-logo-white {
+  display: none !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white #J-common-header-logo-black {
+  display: block !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white #J-common-header-black-activity-img {
+  display: block !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white #J-common-header-white-activity-img {
+  display: none !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ali-common-header-register {
+  background: rgba(0, 0, 0, 0.06) !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#0F000000', EndColorStr='#0F000000')";
+  color: #333 !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white .ali-common-header-register h1 {
+  color: #333 !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white #J-home-topbar-menu:hover #J-common-header-logo-white,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white #J-home-topbar-menu.home-topbar-menu-hover #J-common-header-logo-white {
+  display: block !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white #J-home-topbar-menu:hover #J-common-header-logo-black,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white #J-home-topbar-menu.home-topbar-menu-hover #J-common-header-logo-black {
+  display: none !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white #J-home-topbar-menu:hover .ali-common-header-register,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white #J-home-topbar-menu.home-topbar-menu-hover .ali-common-header-register {
+  background: rgba(255, 255, 255, 0.06) !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, StartColorStr='#0F000000', EndColorStr='#0F000000')";
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+  color: #fff !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white #J-home-topbar-menu:hover .ali-common-header-register h1,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap.J-home-slider-white #J-home-topbar-menu.home-topbar-menu-hover .ali-common-header-register h1 {
+  color: #fff !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover {
+  /**兼容：公共导航迁移后，li变成 div 了**/
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ali-common-header:before,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ali-common-header:before {
+  background: #00a2ca;
+  height: 100%;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ali-common-header-inner .menu li.top-menu-item .menu-hd,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ali-common-header-inner .menu li.top-menu-item .menu-hd {
+  color: #fff !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ali-common-header-inner .menu div.top-menu-item .menu-hd,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ali-common-header-inner .menu div.top-menu-item .menu-hd {
+  color: #fff !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ay-global-topbar,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ay-global-topbar {
+  background: #008eb7 !important;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+  /***topbar用户区下拉需要变成黑色****/
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ay-global-topbar a:link,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ay-global-topbar a:link,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ay-global-topbar a:visited,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ay-global-topbar a:visited {
+  color: #fff !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ay-global-topbar .lnk-user i,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ay-global-topbar .lnk-user i {
+  border-top-color: #fff !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ay-global-topbar a.lnk-item:hover,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ay-global-topbar a.lnk-item:hover,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ay-global-topbar a.lnk-login:hover,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ay-global-topbar a.lnk-login:hover,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ay-global-topbar a.lnk-reg:hover,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ay-global-topbar a.lnk-reg:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(100));
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ay-global-topbar .aliyun-user:hover a:link,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ay-global-topbar .aliyun-user:hover a:link,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ay-global-topbar .aliyun-user:hover a:visited,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ay-global-topbar .aliyun-user:hover a:visited {
+  color: #000 !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ay-global-topbar .aliyun-user:hover .user-list .user-rights a:hover,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ay-global-topbar .aliyun-user:hover .user-list .user-rights a:hover,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ay-global-topbar .aliyun-user:hover .user-list ul a:hover,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ay-global-topbar .aliyun-user:hover .user-list ul a:hover {
+  color: #fff !important;
+}
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu:hover .ay-global-topbar .aliyun-user:hover .lnk-user i,
+.aliyun-common-transparent-head .module-wrap #J-home-slider-wrap #J-home-topbar-menu.home-topbar-menu-hover .ay-global-topbar .aliyun-user:hover .lnk-user i {
+  border-top-color: #333 !important;
+}
